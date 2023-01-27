@@ -1,0 +1,108 @@
+<!--THIS IS NOT AN ORIGINAL CODE AND IS INTENDED FOR PERSONAL USE
+FOR THE AUTHOR, GO TO https://github.com/anthonytedja-->
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  	<meta charset="UTF-8">
+  	<title>Cat</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="style.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GP5BBLEH9E"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-GP5BBLEH9E');
+
+	</script>
+    <style>
+        :root {
+	--main-bg-color: #fff;
+	--main-text-color: #f58f70;
+}
+
+[cat-data-theme="dark"] {
+	--main-bg-color: #191919;
+	--main-text-color: #f58f70;
+}
+
+* {
+	box-sizing: border-box;
+	transition: all ease 0.2s;
+	color: var(--main-text-color);
+}
+
+body {
+	margin: 40px auto 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--main-bg-color);
+	position: relative;
+	transition: all ease 0.2s;
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.container {
+	max-height: 16em;
+	max-width: 16em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--main-bg-color);
+	background-position: center center;
+	background-size: cover;
+	transition: all ease 0.2s;
+	user-select: none;
+	border-radius: 50%;
+	/* border: 4px solid var(--main-text-color); */
+}
+
+.container:hover {
+	cursor: pointer;
+}
+
+.container:active {
+	transform: scale(0.95);
+}
+
+#logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 40px;
+	position: absolute;
+	margin-top: 358px;
+}
+
+#logo:hover {
+	opacity: 0.3;
+	transform: scale(1.1);
+}
+
+@media screen and (max-width:750px) {
+	#logo {
+		display: none;
+	}
+}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<img src="cat.gif" id="image" />
+	</div>
+<!--	<a id="logo" href="https://github.com/anthonytedja" onclick="event.stopPropagation()"><i class="fa fa-github fa-lg"></i></a>-->
+  	<script src="script.js"></script>
+
+</body>
+</html>
